@@ -1,0 +1,42 @@
+public class Calculator {
+public Integer a{get; set;}
+public Integer b{get; set;}
+public Calculator(Integer aval,Integer bval){
+a=aval;
+b=bval;
+}
+public void add(){
+Integer result=a+b;
+System.debug('Addition is :' + result);
+}
+public void subtract(){
+Integer result=a-b;
+System.debug('Subtraction is :' + result);
+}
+public void Multipy(){
+Integer result=a*b;
+System.debug('Multiplication is :' + result);
+}
+public void Divide(){
+if(b!=0){
+Decimal result=(Decimal)a/(Decimal)b;
+System.debug('Division is :'+result);
+}
+else{
+System.debug('Divide by Zero error');
+}
+}
+public void Mod(){
+Integer result = Math.mod(a,b);
+System.debug('Mod :'+result);
+}
+public void power(){
+Double result = Math.pow(a,b);
+System.debug('Power :'+result);
+}
+public void squareroot(){
+Double res1=Math.sqrt(a);
+Double res2=Math.sqrt(b);
+System.debug('Square root of '+a+' is '+res1);
+System.debug('Square root of '+b+' is '+res2);
+}
