@@ -1,0 +1,22 @@
+public class CurrencyConvertor {
+  private static Decimal USD_EUR=0.85;
+  private static Decimal EUR_USD=1.18;
+  private static Decimal INR_USD=74.5;
+  private static Decimal USD_INR=0.013;
+  public void USD_TO_INR(Integer num1){
+  Decimal ans=num1*USD_INR;
+  System.debug('USD TO INR :'+ans);
+  }
+  public void INR_TO_USD(Integer num1){
+  Decimal ans=num1*INR_USD;
+  System.debug('INR TO USD :'+ans);
+  }
+  public void USD_TO_EUR(Integer num1){
+  Decimal ans=num1*USD_EUR;
+  System.debug('USD TO EUR :'+ans);
+  }
+  public void EUR_TO_USD(Integer num1){
+  Decimal ans=num1*EUR_USD;
+  System.debug('EUR TO USD :'+ans);
+  }
+}
