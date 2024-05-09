@@ -1,0 +1,20 @@
+public class MrakSheetGenerator {
+  public void MarkSheet(String sname,Map<String,Integer>smap){
+  Integer totalMarks=0;
+  Integer totalSubjects=smap.size();
+  for(Integer marks :smap.values()){
+  totalMarks=totalMarks+marks;
+  }
+  Decimal percentage = (Decimal)totalMarks/(Decimal)totalSubjects;
+  System.debug('----Mark Sheet-----');
+  System.debug('Student Name :'+sname);
+  System.debug('--------------------');
+  System.debug('Subject\t\tMarks');
+  for(String sub:smap.keyset()){
+  System.debug(sub +'\t:\t'+smap.get(sub));
+  }
+  System.debug('--------------------');
+  System.debug('Total Marks :'+ totalMarks);
+  System.debug('Percentage :'+ percentage+'%');
+  }
+}
